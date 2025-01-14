@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login : Smart </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Ramabhadra&family=Rozha+One&family=Tauri&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/9b71f978b6.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <section class="img-banner">
+        <div class="fixed-top">
+            <div class="sticky-top" id="pre-nav">
+                <nav class="navbar navbar-expand-lg rounded-bottom" id="navbar">
+                    <div class="container-fluid">
+                        <a class="navbar-brand text-white" href="index.html">Smart</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mx-lg-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="departments.html">Departments</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="doctors.html">Doctors</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="services.html">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2 search" type="search" placeholder="Search"
+                                    aria-label="Search">
+                                <button class="btn search-btn" type="submit"><i
+                                        class="fa-solid fa-magnifying-glass text-warning"></i></button>
+                            </form>
+                            <div class="navbar-nav">
+                                <a class=" nav-link text-center" href="login.html">login</a>
+                                <form action="logout" method="post">
+                                    <a class="nav-link  text-center">logout</a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="booking-icon rounded-circle shadow">
+            <a class="" href="book-appointment.html"><i class="fa-regular fa-calendar-check fs-3 m-3"></i></a>
+        </div>
+        <div class="modal modal-sheet position-static d-block p-5" tabindex="-1" role="dialog" id="modalSignin">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content rounded-4 shadow" style="background: rgba(112, 114, 114, 0.459)!important; margin-top: 50px;">
+                <div class="modal-header p-5 pb-4 border-bottom-0">
+                  <h1 class="fw-bold mb-0 fs-2 text-white">Sign up for free</h1>
+                </div>
+          
+                <div class="modal-body p-5 pt-0">
+                  <form class="">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control rounded-3" id="floatingInput" placeholder="">
+                        <label for="floatingInput">First Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control rounded-3" id="floatingInput" placeholder="">
+                        <label for="floatingInput">Last Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="number" class="form-control rounded-3" id="floatingInput" placeholder="9123456789">
+                        <label for="floatingInput">Phone Number</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+                      <label for="floatingPassword">Password</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Confirm Password">
+                        <label for="floatingPassword">Confirm Password</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="date" class="form-control rounded-3" id="floatingPassword">
+                        <label for="floatingPassword">Date of Birth</label>
+                    </div>
+                    <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
+                    <small class="text-warning">By clicking Sign up, you agree to the terms of use.</small>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        <footer class="content-2 text-secondary">
+            <div class="row">
+                <div class="col-md-3 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <div class="text-start">
+                            <h2 class="text-sm footer">Contact Details</h2>
+                            <div class="text-left">
+                                <span>Smart Hospitals</span>
+                                <br>
+                                <span class="fa fa-map-marker pe-4"></span>
+                                <span>Trivandrum, Kerala, India</span>
+                                <br>
+                                <span class="fa fa-phone pe-4"></span>
+                                <span>+919074647199</span>
+                                <br>
+                                <span class="fa fa-envelope-o pe-4"></span>
+                                <span>info@smarthospitals.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9 col-sm-12 col-xs-12 ">
+                    <div class="row mb-2">
+                        <h2 class="">Quick Links</h2>
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <a class="px-3 link-2" href="index.html" class="">Home</a>
+                            <a class="px-3 link-2" href="about.html">About Us</a>
+                            <a class="px-3 link-2" href="departments.html">Departments</a>
+                            <a class="px-3 link-2" href="doctors.html">Doctors</a>
+                            <a class="px-3 link-2" href="services.html">Services</a>
+                            <a class="px-3 link-2" href="contact.html" name="Contact">Contact</a>
+                            <a class="px-3 link-2" href="book-appointment.html" name="Sitemap">Appointment</a>
+                            <a class="px-3 link-2" href="intranet.html" >Intranet</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="container text-secondary pb-1">
+            <div class="mb-1">
+                © Smart Hospital | Designed and developed By <a class="link-2 d-inline"
+                    href="http://github.com/itzanees/">Anees Sulaiman</a>
+            </div>
+            <div class="">
+                <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook-f mx-2 link-2">
+                </a>
+                <a href="https://twitter.com/anslmn" target="_blank" class="fa fa-twitter mx-2 link-2">
+                </a>
+                <a href="https://www.instagram.com/a4aneees/" target="_blank" class="fa fa-instagram mx-2 link-2">
+                </a>
+                <a href="https://www.linkedin.com/in/anees/" target="_blank" class="fa fa-linkedin mx-2 link-2">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script>
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+
+                document.getElementById("pre-nav").classList.add("fx-nav")
+                const links = document.querySelectorAll(".nav-link");
+                for (const link of links) {
+                    link.classList.add("text-white")
+                }
+            } else {
+
+                document.getElementById("pre-nav").classList.remove("fx-nav");
+                const links = document.querySelectorAll(".nav-link");
+                for (const link of links) {
+                    link.classList.remove("text-white")
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -8,8 +8,20 @@ body{
     position: fixed;
     bottom: 100px;
     right: 80px;
-    border: 1px solid #00fffc;
+    border: 2px solid #cc00ff;
     z-index: 1000;
+}
+.booking-icon:hover {
+    border: 3px solid #ff009d;
+    transform:scale(110%);
+    transition: 0.5s;
+}
+.fa-calendar-check{
+    color: #fff;
+}
+
+.fa-calendar-check:hover{
+    color: #ff009d!important;
 }
 
 .img-banner {
@@ -80,6 +92,10 @@ body{
 .navbar-nav .nav-link.active, .nav-link:hover{
     color: #00a2ff!important;
     transition: all 0.4s ease 0s;
+}
+
+.nav-link:hover{
+    transform: translateY(-5px);
 }
 
 .info {
@@ -203,6 +219,23 @@ url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100
     min-height: 150px;
 }
 
+
+.footer{
+    text-align: left!important;
+}
+
+.link-2{
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: none;
+    color: #bdc7ff;
+}
+
+.link-2:hover {
+    color: #ffc400 !important;
+    transform: translate(0px, -5px);
+    transition: all 0.4s ease 0s;
+}
 
 @media (max-width:940px) {
     .booking-icon{   
